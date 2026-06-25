@@ -5,25 +5,25 @@ class Elencho < Formula
   desc "Supply-chain malware and obfuscation scanner"
   homepage "https://github.com/lukemcqueen/elencho"
   license "MIT"
-  version "0.3.2"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lukemcqueen/elencho/releases/download/v0.3.2/elencho-darwin-arm64"
-      sha256 "0b64fba1cdb169a82842753d91db14dea71a7fab36c83e0c7a65f4897d2735e6"
+      url "https://github.com/lukemcqueen/elencho/releases/download/v0.4.0/elencho-darwin-arm64"
+      sha256 "2e1bbff917e6cec86558e7256651fb797ca3144d80d8ee37133e114c66d5bb87"
     else
-      url "https://github.com/lukemcqueen/elencho/releases/download/v0.3.2/elencho-darwin-amd64"
-      sha256 "579156f083fe35ebe616fdd55f81a42a44279903c4edf4fd142b52a668619634"
+      url "https://github.com/lukemcqueen/elencho/releases/download/v0.4.0/elencho-darwin-amd64"
+      sha256 "ede5468fe8500a9a784b899700d0dae66a316a9922ccf7c749b11bb54f2d1762"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lukemcqueen/elencho/releases/download/v0.3.2/elencho-linux-arm64"
-      sha256 "a65d3b8503667debf4366148dd39ab382af4edb53675af9ba6b55bfed08a2295"
+      url "https://github.com/lukemcqueen/elencho/releases/download/v0.4.0/elencho-linux-arm64"
+      sha256 "7aef6740a0351d1b54ae35527c16ed12bb7ce37161afc5d2804d41b9099e48bf"
     else
-      url "https://github.com/lukemcqueen/elencho/releases/download/v0.3.2/elencho-linux-amd64"
-      sha256 "7f465c1bdad9eff2edc1d647738e8d990cf5f9a161aa41e50b2fd82f8c462040"
+      url "https://github.com/lukemcqueen/elencho/releases/download/v0.4.0/elencho-linux-amd64"
+      sha256 "40efcd168ca129b5876f18aa920baf652070bd98872d2e8b190807386b2ec4c2"
     end
   end
 
